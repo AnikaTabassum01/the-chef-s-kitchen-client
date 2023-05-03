@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Login = () => {
     return (
-        <Container className='py-2 my-4 mx-auto w-25 border border-dark'>
+        <Container className='py-2 my-4 mx-auto w-25 border border-secondary rounded'>
             <h3 className='my-4 text-center'>Log In</h3>
             <Form>
                 <Form.Group className="mb-3" controlId="formBasicEmail">

@@ -3,6 +3,7 @@ import React from 'react';
 
 const ChefData = ({cf}) => {
     
+    
     const { id, name, picture, yearsOfExperience, numberOfRecipes, likes, bio, recipes } = cf;
 
     return (
@@ -13,7 +14,7 @@ const ChefData = ({cf}) => {
                 <p >Number of Recipes : <span >{numberOfRecipes} recipes</span></p>
                 <p  >Bio : <span>{bio}</span></p>
                 <p>Likes : <span >{likes}</span></p>
-                <p><Link to={`/chefData/${id}`}>View Details</Link></p>
+                
             </div>
             {
 
