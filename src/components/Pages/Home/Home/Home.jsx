@@ -1,12 +1,13 @@
 import React from 'react';
 import Banner from '../Banner/Banner';
-import ChefData from '../ChefData/ChefData';
+import Chef from '../Chef/Chef';
 
 const Home = () => {
     return (
         <div>
            <Banner></Banner>
-           <ChefData></ChefData>
+           <Chef></Chef>
+           
         </div>
     );
 };
