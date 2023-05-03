@@ -1,9 +1,12 @@
 import React from 'react';
+import Banner from '../Banner/Banner';
+import ChefData from '../ChefData/ChefData';
 
 const Home = () => {
     return (
         <div>
-            <h2>This is Home</h2>
+           <Banner></Banner>
+           <ChefData></ChefData>
         </div>
     );
 };

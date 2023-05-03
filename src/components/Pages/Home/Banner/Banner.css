@@ -1,0 +1,25 @@
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+    height: 600px;
+    max-width: 1800px;
+    flex-wrap: wrap;
+    padding: 50px 50;
+    background-image: url(https://images.immediate.co.uk/production/volatile/sites/2/2020/11/Ragda-Pattice-V1_preview-82d4613.jpg);
+  }
+  .banner .image {
+    width: 600px;
+    max-width: 1000px;
+    margin-right: 50px;
+  }
+  .banner .text {
+    width: 800px;
+    max-width: 800px;
+    margin-left: 80px;
+  }
+  .banner p{
+    font-size: 22px;
+  }
