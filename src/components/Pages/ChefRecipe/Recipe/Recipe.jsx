@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { toast } from 'react-toastify';
 
 
+
 const Recipe = ({ recipe }) => {
     const [isDisabled, setIsDisabled] = useState(false);
 
@@ -10,12 +11,13 @@ const Recipe = ({ recipe }) => {
         setIsDisabled(!isDisabled);
     };
     return (
-        <div className='d-flex p-4 m-4 border border-info bg-light'> 
-            <h3 className='text-success px-4'>{recipe.name}</h3>
+        <div className='d-flex  pt-2  border border-info  bg-light'> 
+            <img className='h-50 w-50 pe-4 ms-4 my-2 food' src={recipe.photo} alt="" />
             <div>
+            <h3 className='text-success py-2'>{recipe.name}</h3>
             <h6>{recipe.ingredients.join(', ')}</h6>
             <h6>{recipe.cooking_method}</h6>
-            <button disabled={isDisabled} onClick={handleDisable} variant="warning">Favorite</button>
+            <button className='mb-4' disabled={isDisabled} onClick={handleDisable} variant="warning">Favorite</button>
             
             </div>
         </div>

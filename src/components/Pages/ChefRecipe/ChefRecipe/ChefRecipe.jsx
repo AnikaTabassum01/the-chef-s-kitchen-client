@@ -5,7 +5,7 @@ import Recipe from '../Recipe/Recipe';
 
 const ChefRecipe = () => {
     const data = useLoaderData();
-    const { name, picture, yearsOfExperience, numberOfRecipes, likes, bio, recipes } = data;
+    const { name, picture, yearsOfExperience, numberOfRecipes, likes, bio, recipes, photo } = data;
     return (
         <div className='bg-light'>
             <Col className=' p-4 text- d-flex'>
