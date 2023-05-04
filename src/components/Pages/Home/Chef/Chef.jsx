@@ -13,9 +13,11 @@ const Chef = () => {
     }, [])
 
     return (
-       <Container className='p-4'>
+       <Container className='p-4 bg-light'>
+
+        <h1 className='text-center text-success py-4'>Our All Famous Chef at a Glance....</h1>
         <Row className=''>
-            {/* <h2>Chef....</h2> */}
+            
             {
                 chef.map(cf => <ChefCard
                 cf={cf}

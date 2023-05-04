@@ -6,6 +6,7 @@ import Register from "../Pages/Register/Register";
 import Main from "../Layout/Main";
 import Blog from "../Pages/Blog/Blog";
 import ChefRecipe from "../Pages/ChefRecipe/ChefRecipe/ChefRecipe";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 
 
 const router = createBrowserRouter([
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
             {
                 path: '/blog',
                 element: <Blog></Blog>
+            },
+            {
+                path: '*',
+                element: <ErrorPage></ErrorPage>
             }
         ]
     }

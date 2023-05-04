@@ -9,8 +9,8 @@ const ChefCard = ({ cf }) => {
 
     return (
        
-        <Col className=' p-4  rounded' md={4}>
-            <img className='image' src={picture} alt="" />
+        <Col className=' p-4 ps-5 rounded' md={4}>
+            <img className='image mx-auto' src={picture} alt="" />
             <h3 className='text-primary'>{name}</h3>
             <h5>Experience : {yearsOfExperience}</h5>
             <h5>Total Recipes : {numberOfRecipes}</h5>

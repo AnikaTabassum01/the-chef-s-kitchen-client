@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { Toast } from 'react-bootstrap';
+import { toast } from 'react-toastify';
 
 
 const Recipe = ({ recipe }) => {
     const [isDisabled, setIsDisabled] = useState(false);
 
     const handleDisable = () => {
-        Toast(`"${recipe.name}" is your favorite recipe`)
+        toast(` You have added "${recipe.name}" in your favourite recipe.`)
         setIsDisabled(!isDisabled);
     };
     return (
@@ -16,6 +16,7 @@ const Recipe = ({ recipe }) => {
             <h6>{recipe.ingredients.join(', ')}</h6>
             <h6>{recipe.cooking_method}</h6>
             <button disabled={isDisabled} onClick={handleDisable} variant="warning">Favorite</button>
+            
             </div>
         </div>
 
