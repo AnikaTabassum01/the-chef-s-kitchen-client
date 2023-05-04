@@ -26,7 +26,7 @@ const PopularRecipes = () => {
                 </div>
                 <div>
                     <img className='recipe' src="https://www.licious.in/blog/wp-content/uploads/2020/12/Fish-Salad-min-750x750.jpg" alt="" />
-                    <h4>Fish Salad</h4>
+                    <h4 className='mb-5 pb-5'>Fish Salad</h4>
                 </div>
                
                 

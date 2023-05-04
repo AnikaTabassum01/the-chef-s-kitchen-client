@@ -4,6 +4,7 @@ import Chef from '../Chef/Chef';
 import PopularRecipes from '../PopularRecipes/PopularRecipes';
 import { AuthContext } from '../../../Provider/AuthProvider';
 import Loader from '../../Shared/Loader/Loader';
+import SpecialCourses from '../SpecialCourses/SpecialCourses';
 
 const Home = () => {
     const { loading } = useContext(AuthContext)
@@ -16,6 +17,7 @@ const Home = () => {
                         <Banner></Banner>
                         <Chef></Chef>
                         <PopularRecipes></PopularRecipes>
+                        <SpecialCourses></SpecialCourses>
                     </>
             }
 
