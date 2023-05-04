@@ -1,5 +1,4 @@
 import { createBrowserRouter } from "react-router-dom";
-// import Main from "../Layout/Main";
 import Home from "../Pages/Home/Home/Home";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
@@ -7,6 +6,7 @@ import Main from "../Layout/Main";
 import Blog from "../Pages/Blog/Blog";
 import ChefRecipe from "../Pages/ChefRecipe/ChefRecipe/ChefRecipe";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import PrivateRoute from "./PrivateRoute";
 
 
 const router = createBrowserRouter([
@@ -20,7 +20,7 @@ const router = createBrowserRouter([
             },
             {
                 path: 'chefRecipe/:id',
-                element: <ChefRecipe></ChefRecipe>,
+                element: <PrivateRoute><ChefRecipe></ChefRecipe></PrivateRoute>,
                 loader: ({params}) => fetch(`https://the-chef-s-kitchen-server.vercel.app/recipe/${params.id}`)
             },
             {

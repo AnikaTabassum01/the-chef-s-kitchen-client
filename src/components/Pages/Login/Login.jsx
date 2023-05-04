@@ -61,9 +61,6 @@ const Login = () => {
         })
     }
 
-
-
-
     return (
 
         
@@ -84,6 +81,9 @@ const Login = () => {
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     <Form.Check type="checkbox" label="Check me out" />
                 </Form.Group>
+
+                <p className='text-danger mt-3'>{error}</p>
+
                 <Button className='my-2' variant="primary" type="submit">
                     Submit
                 </Button>

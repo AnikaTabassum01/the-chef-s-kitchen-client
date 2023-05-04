@@ -1,9 +1,25 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
+import { Button, Container } from 'react-bootstrap';
+import { html2pdf } from 'html2pdf.js';
 
 const Blog = () => {
+
+    const downloadAsPdf = () => {
+        const element = document.getElementById('blog');
+        const options = {
+            margin: 0.5,
+            filename: 'blog.pdf',
+            jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' },
+        };
+        html2pdf().set(options).from(element).save();
+    }
+
     return (
+
         <Container>
+
+            <Button className='mt-4' onClick={downloadAsPdf} variant="outline-success">Download</Button>
+
             <h2 className='text-center pt-4 text-primary'>Questions and Answers</h2>
             <div className='border border-green rounded p-4 bg-light my-4'>
                 <h5> <span className='text-danger'>  Question-1 : </span> Tell us the differences between uncontrolled and controlled components.</h5>
@@ -38,7 +54,6 @@ const Blog = () => {
                     I will create a custom hook for tasting and share components. Creating a custom hook in React can help me to improve reusability, organization, abstraction, and testing of my code. It allow me to encapsulate complex logic and state management into a reusable function, which can be easily shared across components and projects.
                 </p>
             </div>
-
 
         </Container>
     );
